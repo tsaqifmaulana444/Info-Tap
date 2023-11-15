@@ -1,4 +1,5 @@
 import 'package:absensi_mobile_app/home/home.dart';
+import 'package:absensi_mobile_app/layout/mainlayout.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
@@ -196,7 +197,7 @@ class _LoginState extends State<Login> {
                               onPressed: () {
                                 Navigator.pushReplacement(
                                   context,
-                                  MaterialPageRoute(builder: (context) => Home()),
+                                  MaterialPageRoute(builder: (context) => mainLayout()),
                                 );
                               },
                               style: ButtonStyle(
