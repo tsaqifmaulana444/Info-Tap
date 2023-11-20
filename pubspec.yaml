@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^6.1.0
   lucide_icons: ^0.257.0
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:
@@ -89,3 +90,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  
