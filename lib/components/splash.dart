@@ -9,7 +9,7 @@ class Splash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Timer(const Duration(seconds: 5), () {
+    Timer(const Duration(seconds: 500), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const Login()),
@@ -33,29 +33,10 @@ class Splash extends StatelessWidget {
                       height: MediaQuery.of(context).size.height / 1.6,
                       child: Container(
                         margin: const EdgeInsets.only(top: 70),
-                        child: Center(
-                          child: Column(
-                            children: [
-                              Container(
-                                  color: Colors.green,
-                                  width: 200,
-                                  height: 150,
-                                  child: const Center(
-                                    child: Text("logo"),
-                                  )),
-                              Container(
-                                margin: const EdgeInsets.only(top: 10),
-                                child: const Text(
-                                    "Starbhak Tap",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 20,
-                                    color: Color(0xFFFFFFFF)
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
+                        child: const Image(
+                            image: AssetImage('assets/images/logo.png'),
+                            width: 100,
+                            height: 100,
                         ),
                       ),
                     ),

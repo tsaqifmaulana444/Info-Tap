@@ -82,7 +82,7 @@ class _AllNewsState extends State<AllNews> {
                             Container(
                               margin: const EdgeInsets.only(top: 10),
                               child: const Text(
-                                "Siapapun Capresnya, Jangan Pilih Ganjar",
+                                "Ini berita keren",
                                 style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.w500
@@ -92,7 +92,7 @@ class _AllNewsState extends State<AllNews> {
                             Container(
                               margin: const EdgeInsets.only(top: 7),
                               child: const Text(
-                                "Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya...",
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet ...",
                                 style: TextStyle(
                                     color: Color(0xFF6D6D6D),
                                     fontSize: 13,
@@ -150,7 +150,7 @@ class _AllNewsState extends State<AllNews> {
                           Container(
                             margin: const EdgeInsets.only(top: 10),
                             child: const Text(
-                              "Siapapun Capresnya, Jangan Pilih Ganjar",
+                              "Ini berita keren",
                               style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w500
@@ -160,7 +160,7 @@ class _AllNewsState extends State<AllNews> {
                           Container(
                             margin: const EdgeInsets.only(top: 7),
                             child: const Text(
-                              "Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya...",
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet ...",
                               style: TextStyle(
                                   color: Color(0xFF6D6D6D),
                                   fontSize: 13,
@@ -217,7 +217,7 @@ class _AllNewsState extends State<AllNews> {
                           Container(
                             margin: const EdgeInsets.only(top: 10),
                             child: const Text(
-                              "Siapapun Capresnya, Jangan Pilih Ganjar",
+                              "Ini berita keren",
                               style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w500
@@ -227,7 +227,7 @@ class _AllNewsState extends State<AllNews> {
                           Container(
                             margin: const EdgeInsets.only(top: 7),
                             child: const Text(
-                              "Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya...",
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet ...",
                               style: TextStyle(
                                   color: Color(0xFF6D6D6D),
                                   fontSize: 13,

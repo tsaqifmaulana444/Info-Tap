@@ -65,7 +65,7 @@ class _DetailNewsState extends State<DetailNews> {
                             borderRadius: BorderRadius.circular(9),
                           ),
                         ),
-                        const Text("Siapapun Capresnya, Jangan Pilih Ganjar"),
+                        const Text("Ini berita keren"),
                         const Row(
                           children: [
                             Padding(
