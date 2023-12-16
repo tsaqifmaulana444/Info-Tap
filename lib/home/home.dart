@@ -148,7 +148,7 @@ class _HomeState extends State<Home> {
                                           margin: const EdgeInsets.symmetric(
                                               horizontal: 10),
                                           child: const Text(
-                                            "Cek Absensi",
+                                            "Absensi",
                                             style: TextStyle(
                                                 color: Color(0xFF3C90CF),
                                                 fontWeight: FontWeight.w700),
@@ -257,50 +257,59 @@ class _HomeState extends State<Home> {
                                     ),
                                   ),
                                 ),
-                                Container(
-                                  margin:
-                                      const EdgeInsets.symmetric(horizontal: 15),
-                                  width: 110,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      color: const Color(0xFF141414),
-                                      width: 1.0,
-                                    ),
-                                    borderRadius: BorderRadius.circular(9),
-                                  ),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        margin: const EdgeInsets.fromLTRB(
-                                            10, 15, 10, 30),
-                                        width: 39,
-                                        height: 39,
-                                        decoration: BoxDecoration(
-                                          border: Border.all(
-                                            color: const Color(0xFF141414),
-                                            width: 0.7,
-                                          ),
-                                          borderRadius: const BorderRadius.all(
-                                              Radius.circular(30)),
-                                        ),
-                                        child: const Icon(
-                                          Icons.accessibility_sharp,
-                                          color: Color(0xFF141414),
-                                        ),
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => const AllAbsen()),
+                                    );
+                                  },
+                                  child: Container(
+                                    margin:
+                                        const EdgeInsets.symmetric(horizontal: 15),
+                                    width: 110,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(
+                                        color: const Color(0xFF141414),
+                                        width: 1.0,
                                       ),
-                                      Container(
-                                        margin: const EdgeInsets.symmetric(
-                                            horizontal: 10),
-                                        child: const Text(
-                                          "Cek Absensi",
-                                          style: TextStyle(
-                                              color: Color(0xFF141414),
-                                              fontWeight: FontWeight.w700),
+                                      borderRadius: BorderRadius.circular(9),
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Container(
+                                          margin: const EdgeInsets.fromLTRB(
+                                              10, 15, 10, 30),
+                                          width: 39,
+                                          height: 39,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: const Color(0xFF141414),
+                                              width: 0.7,
+                                            ),
+                                            borderRadius: const BorderRadius.all(
+                                                Radius.circular(30)),
+                                          ),
+                                          child: const Icon(
+                                            Icons.accessibility_sharp,
+                                            color: Color(0xFF141414),
+                                          ),
                                         ),
-                                      )
-                                    ],
+                                        Container(
+                                          margin: const EdgeInsets.symmetric(
+                                              horizontal: 10),
+                                          child: const Text(
+                                            "Cek Absensi",
+                                            style: TextStyle(
+                                                color: Color(0xFF141414),
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],

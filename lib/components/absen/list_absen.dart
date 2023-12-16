@@ -54,7 +54,7 @@ class _AllAbsenState extends State<AllAbsen> {
                       child: Row(
                         children: [
                           const Text(
-                            "Cek Abdsadassdensi",
+                            "Cek Absensi",
                             style: TextStyle(
                                 color: Color(0xFF6E6E6E),
                                 fontSize: 20,
