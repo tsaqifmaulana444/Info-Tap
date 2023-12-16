@@ -6,8 +6,8 @@ class API {
   postRequest({
     required String route,
     required Map<String, dynamic> data,
-  }) async {
-    String apiUrl = 'https://620a-118-99-81-165.ngrok-free.app/api';
+  }) async {  
+    String apiUrl = 'https://5eeb-117-102-67-67.ngrok-free.app/api';
     String url = apiUrl + route;
 
     return await http.post(
@@ -20,7 +20,7 @@ class API {
   getRequest({
     required String route,
   }) async {
-    String apiUrl = 'https://620a-118-99-81-165.ngrok-free.app/api';
+    String apiUrl = 'https://5eeb-117-102-67-67.ngrok-free.app/api';
 
     String url = apiUrl + route;
 

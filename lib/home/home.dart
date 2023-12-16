@@ -337,7 +337,7 @@ class _HomeState extends State<Home> {
                                     children: [
                                       Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 25),
+                                            vertical: 23),
                                         child: Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
@@ -350,8 +350,6 @@ class _HomeState extends State<Home> {
                                                   fontSize: 14),
                                             ),
                                             Container(
-                                              margin:
-                                                  const EdgeInsets.only(top: 7),
                                               child: const Text(
                                                 "Tap In",
                                                 style: TextStyle(
@@ -399,7 +397,7 @@ class _HomeState extends State<Home> {
                                     children: [
                                       Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 25),
+                                            vertical: 23),
                                         child: Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
@@ -412,8 +410,6 @@ class _HomeState extends State<Home> {
                                                   fontSize: 14),
                                             ),
                                             Container(
-                                              margin:
-                                                  const EdgeInsets.only(top: 7),
                                               child: const Text(
                                                 "Tap In",
                                                 style: TextStyle(
@@ -461,7 +457,7 @@ class _HomeState extends State<Home> {
                                     children: [
                                       Container(
                                         margin: const EdgeInsets.symmetric(
-                                            vertical: 25),
+                                            vertical: 23),
                                         child: Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
@@ -474,8 +470,6 @@ class _HomeState extends State<Home> {
                                                   fontSize: 14),
                                             ),
                                             Container(
-                                              margin:
-                                                  const EdgeInsets.only(top: 7),
                                               child: const Text(
                                                 "Tap Out",
                                                 style: TextStyle(
@@ -602,7 +596,7 @@ class _HomeState extends State<Home> {
                                   Container(
                                     margin: const EdgeInsets.only(top: 10),
                                     child: const Text(
-                                      "Siapapun Capresnya, Jangan Pilih Ganjar",
+                                      "ini berita keren",
                                       style: TextStyle(
                                           fontSize: 15,
                                           fontWeight: FontWeight.w500
@@ -612,7 +606,7 @@ class _HomeState extends State<Home> {
                                   Container(
                                     margin: const EdgeInsets.only(top: 7),
                                     child: const Text(
-                                      "Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya, Jangan Pilih Ganjar. Siapapun Capresnya...",
+                                      "ini berita keren. ini berita keren. ini berita keren. ini...",
                                       style: TextStyle(
                                           color: Color(0xFF6D6D6D),
                                           fontSize: 13,

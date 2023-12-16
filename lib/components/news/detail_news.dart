@@ -29,7 +29,8 @@ class _DetailNewsState extends State<DetailNews> {
                       onTap: () {
                         Navigator.pushReplacement(
                           context,
-                          MaterialPageRoute(builder: (context) => const AllNews()),
+                          MaterialPageRoute(
+                              builder: (context) => const AllNews()),
                         );
                       },
                       child: Container(
@@ -40,8 +41,8 @@ class _DetailNewsState extends State<DetailNews> {
                             color: const Color(0xFFB3B3B3),
                             width: 0.7,
                           ),
-                          borderRadius: const BorderRadius.all(
-                              Radius.circular(30)),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(30)),
                         ),
                         child: const Icon(Icons.arrow_back),
                       ),
@@ -51,7 +52,7 @@ class _DetailNewsState extends State<DetailNews> {
                     margin: const EdgeInsets.symmetric(vertical: 30),
                     width: MediaQuery.of(context).size.width,
                     decoration: const BoxDecoration(
-                      color: Colors.white,
+                      color: Color(0xFFF5F5F5),
                       borderRadius: BorderRadius.all(Radius.circular(9)),
                     ),
                     child: Column(
@@ -65,40 +66,60 @@ class _DetailNewsState extends State<DetailNews> {
                             borderRadius: BorderRadius.circular(9),
                           ),
                         ),
-                        const Text("Ini berita keren"),
-                        const Row(
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 6),
-                              child: Icon(Icons.account_circle_rounded, size: 25, color: Color(0xFF6D6D6D),),
-                            ),
-                            Text(
-                              "SMK TARUNA BHAKTI",
-                              style: TextStyle(
-                                  color: Color(0xFF6D6D6D),
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w400
-                              ),
-                            ),
-
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 6),
-                              child: Icon(Icons.circle, size: 7, color: Color(0xFF6D6D6D),),
-                            ),
-                            Text(
-                              "20 Februari 2022",
-                              style: TextStyle(
-                                  color: Color(0xFF6D6D6D),
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w400
-                              ),
-                            ),
-                          ],
-                        ),
-                        const Text("This story come from a young boy who living in Merauke, a city in Indonesia. He has some potential in machine learning, but unfortunately his environment didn’t support him to exploring"),
-                        const Text("This story come from a young boy who living in Merauke, a city in Indonesia. He has some potential in machine learning, but unfortunately his environment didn’t support him to exploring"),
-                        const Text("This story come from a young boy who living in Merauke, a city in Indonesia. He has some potential in machine learning, but unfortunately his environment didn’t support him to exploring"),
                         Container(
+                            margin: const EdgeInsets.only(top: 5),
+                            child: const Text("Ini berita keren")),
+                        Container(
+                          margin: const EdgeInsets.symmetric(vertical: 6),
+                          child: const Row(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 6),
+                                child: Icon(
+                                  Icons.account_circle_rounded,
+                                  size: 25,
+                                  color: Color(0xFF6D6D6D),
+                                ),
+                              ),
+                              Text(
+                                "SMK TARUNA BHAKTI",
+                                style: TextStyle(
+                                    color: Color(0xFF6D6D6D),
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w400),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 6),
+                                child: Icon(
+                                  Icons.circle,
+                                  size: 7,
+                                  color: Color(0xFF6D6D6D),
+                                ),
+                              ),
+                              Text(
+                                "20 Februari 2022",
+                                style: TextStyle(
+                                    color: Color(0xFF6D6D6D),
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w400),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                            margin: const EdgeInsets.only(top: 8),
+                            child: const Text(
+                                "This story come from a young boy who living in Merauke, a city in Indonesia. He has some potential in machine learning, but unfortunately his environment didn't support him to exploring")),
+                        Container(
+                            margin: const EdgeInsets.only(top: 8),
+                            child: const Text(
+                                "This story come from a young boy who living in Merauke, a city in Indonesia. He has some potential in machine learning, but unfortunately his environment didn't support him to exploring")),
+                        Container(
+                            margin: const EdgeInsets.only(top: 8),
+                            child: const Text(
+                                "This story come from a young boy who living in Merauke, a city in Indonesia. He has some potential in machine learning, but unfortunately his environment didn't support him to exploring")),
+                        Container(
+                          margin: const EdgeInsets.only(top: 10),
                           width: MediaQuery.of(context).size.width,
                           height: MediaQuery.of(context).size.height / 4.8,
                           decoration: BoxDecoration(
@@ -107,7 +128,10 @@ class _DetailNewsState extends State<DetailNews> {
                           ),
                         ),
                         const Text("Doc: nothing"),
-                        const Text("This story come from a young boy who living in Merauke, a city in Indonesia. He has some potential in machine learning, but unfortunately his environment didn’t support him to exploring"),
+                        Container(
+                            margin: const EdgeInsets.only(top: 8),
+                            child: const Text(
+                                "This story come from a young boy who living in Merauke, a city in Indonesia. He has some potential in machine learning, but unfortunately his environment didn't support him to exploring")),
                         const Text("Baca Juga: Ular Masuk Rumah")
                       ],
                     ),
