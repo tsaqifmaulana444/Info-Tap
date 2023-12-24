@@ -1,3 +1,4 @@
+import 'package:absensi_mobile_app/home/home_guru.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'components/splash.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Aplikasi Absensi Mobile',
-      home: Splash(),
+      home: HomeGuru(),
     );
   }
 }

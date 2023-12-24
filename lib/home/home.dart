@@ -76,7 +76,7 @@ class _HomeState extends State<Home> {
                   ),
                   Container(
                     margin: const EdgeInsets.only(top: 185),
-                    height: MediaQuery.of(context).size.height * 1.7,
+                    // height: MediaQuery.of(context).size.height * 1.7,
                     width: MediaQuery.of(context).size.width,
                     decoration: const BoxDecoration(
                       color: Color(0xFFF5F5F5),
@@ -330,7 +330,6 @@ class _HomeState extends State<Home> {
                               Container(
                                 margin: const EdgeInsets.only(top: 10),
                                 width: MediaQuery.of(context).size.width,
-                                height: MediaQuery.of(context).size.height / 7.5,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   border: Border.all(
@@ -390,7 +389,6 @@ class _HomeState extends State<Home> {
                               Container(
                                 margin: const EdgeInsets.only(top: 10),
                                 width: MediaQuery.of(context).size.width,
-                                height: MediaQuery.of(context).size.height / 7.5,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   border: Border.all(
@@ -450,7 +448,6 @@ class _HomeState extends State<Home> {
                               Container(
                                 margin: const EdgeInsets.only(top: 10),
                                 width: MediaQuery.of(context).size.width,
-                                height: MediaQuery.of(context).size.height / 7.5,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   border: Border.all(
