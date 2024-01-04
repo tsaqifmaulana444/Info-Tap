@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:absensi_mobile_app/home/home_guru.dart';
 import 'package:absensi_mobile_app/layout/mainlayout.dart';
 import 'package:absensi_mobile_app/methods/api.dart';
 import 'package:flutter/material.dart';
@@ -19,15 +20,14 @@ class _LoginState extends State<Login> {
   bool? rememberMe = false;
 
   Future<Map<String, dynamic>> loginUser() async {
-     
-      final data = {
-        'username': username.text.toString(),
-        'password': password.text.toString(),
-      };
+    final data = {
+      'username': username.text.toString(),
+      'password': password.text.toString(),
+    };
 
-      print('NIH DATA :${data}');
-      final response = await API().postRequest(route: '/login', data: data);
-      final jsonData = json.decode(response.body);
+    print('NIH DATA :${data}');
+    final response = await API().postRequest(route: '/login', data: data, token: '');
+    final jsonData = json.decode(response.body);
 
     try {
       if (jsonData['success'] == true) {
@@ -35,16 +35,15 @@ class _LoginState extends State<Login> {
         Map<String, dynamic> userData = jsonData['data'];
         String token = userData['token'];
         String username = userData['username'];
-        String createdUser = userData['created_user'];
+        String type = userData['type'];
 
         SharedPreferences preferences = await SharedPreferences.getInstance();
         await preferences.setString('token', token);
         await preferences.setString('username', username);
-        await preferences.setString('created_user', createdUser);
+
 
         Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => const mainLayout(),
-        ));
+            builder: (context) => type == 'siswa' ? mainLayout() : HomeGuru()));
 
         return jsonData;
       } else {

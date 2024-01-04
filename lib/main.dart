@@ -1,7 +1,9 @@
-import 'package:absensi_mobile_app/home/home_guru.dart';
+import 'package:absensi_mobile_app/components/absen/list_absen.dart';
+import 'package:absensi_mobile_app/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'components/splash.dart';
+import 'components/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Aplikasi Absensi Mobile',
-      home: HomeGuru(),
+      home: Login(),
     );
   }
 }
